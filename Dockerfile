@@ -48,10 +48,10 @@ RUN python3 -m pip install -e git+https://github.com/kytos-ng/of_core@${branch_o
  && python3 -m pip install -e git+https://github.com/kytos-ng/kytos_stats@${branch_kytos_stats}#egg=amlight-kytos_stats \
  && python3 -m pip install -e git+https://github.com/kytos-ng/sdntrace_cp@${branch_sdntrace_cp}#egg=amlight-sdntrace_cp \
  && python3 -m pip install -e git+https://github.com/kytos-ng/mef_eline@${branch_mef_eline}#egg=kytos-mef_eline \
- && python3 -m pip install -e git+https://github.com/kytos-ng/of_multi_table@${branch_of_multi_table}#egg=kytos-of_multi_table
- #&& curl -L -o /tmp/latest.zip https://github.com/kytos-ng/ui/releases/${release_ui}/latest.zip \
- #&& python3 -m zipfile -e /tmp/latest.zip  /usr/local/lib/python3.11/dist-packages/kytos/web-ui \
- #&& rm -f /tmp/latest.zip
+ && python3 -m pip install -e git+https://github.com/kytos-ng/of_multi_table@${branch_of_multi_table}#egg=kytos-of_multi_table \
+ && curl -L -o /tmp/latest.zip https://github.com/kytos-ng/ui/releases/${release_ui}/latest.zip \
+ && python3 -m zipfile -e /tmp/latest.zip  /usr/local/lib/python3.11/dist-packages/kytos/web-ui \
+ && rm -f /tmp/latest.zip
 
 # end-to-end python related dependencies
 # pymongo and requests resolve to the same version on kytos and NApps
