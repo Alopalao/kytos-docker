@@ -3,7 +3,7 @@ MAINTAINER Italo Valcy <italovalcy@gmail.com>
 
 ARG branch_python_openflow=master
 ARG branch_kytos_utils=master
-ARG branch_kytos=master
+ARG branch_kytos=upgrade/mongo
 ARG branch_of_core=master
 ARG branch_flow_manager=master
 ARG branch_topology=master
